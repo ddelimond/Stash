@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: 'Urbanist', sans-serif;
+  margin: 0;
+
+
+}
