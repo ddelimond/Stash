@@ -1,7 +1,7 @@
 import SearchIcon from '@material-ui/icons/Search';
 import Badge from '@material-ui/core/Badge';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-
+import { logo } from '../assets/index';
 
 const Navbar = () => {
     return (
@@ -12,13 +12,13 @@ const Navbar = () => {
                         <span className='text-sm cursor-pointer'>EN</span>
                         <div className='flex border-black/40 rounded-2xl border-2 p-1 ml-6 border-solid  '>
                             <input type="text" className='focus:outline-none' />
-                            <SearchIcon className='text-[gray]/40' fontSize='16px' />
+                            <SearchIcon className='text-[gray]/40' />
                         </div>
                     </div>
-                    <h1 className='cursor-pointer items-center text-3xl font-bold text-center grow '>
-                        STASH.
+                    <h1 className=' w-full cursor-pointer items-center text-3xl font-bold text-center grow'>
+                        <img className='w-[150px] m-auto' src={logo} alt="logo" />
                     </h1>
-                    <span className=' flex flex-row gap-x-6 text-sm mr-2 justify-end  items-center '>
+                    <span className=' flex flex-row gap-x-6 text-sm mr-2 justify-end  items-center'>
                         <div className='text-sm cursor-pointer'>REGISTER</div>
                         <div className='text-sm cursor-pointer'>SIGN IN</div>
                         <div className='text-sm cursor-pointer'>
