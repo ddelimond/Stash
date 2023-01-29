@@ -16,8 +16,8 @@ const Slider = () => {
     }
 
     return (
-        <div className=" container w-screen overflow-hidden max-w-full h-screen flex  relative">
-            <div className="flex justify-center absolute  opacity-80 left-[1rem] z-10 cursor-pointer bottom-60 top-0 m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
+        <div className=" container w-screen overflow-hidden max-w-full flex  relative">
+            <div className="flex justify-center absolute  opacity-80 left-[1rem] z-10 cursor-pointer bottom-[0%] top-0 m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
                 <ArrowBackIosIcon onClick={() => handleClick('left')} />
             </div>
             <div className={`wrapper transition-all ease duration-[1500ms] m-0    translate-x-[${slideIndex * -100}vw] flex h-full`}>
@@ -37,7 +37,7 @@ const Slider = () => {
                 })
                 }
             </div>
-            <div className="flex justify-center absolute  opacity-80 cursor-pointer z-10 bottom-60 top-0 right-[1rem] m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
+            <div className="flex justify-center absolute  opacity-80 cursor-pointer z-10 bottom-0 top-0 right-[1rem] m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
                 <ArrowForwardIosIcon onClick={() => handleClick('right')} />
             </div>
         </div >

@@ -8,8 +8,8 @@ const Categories = () => {
 
     return (
 
-        <div className='container '>
-            {categories.map((item) => <CategoryItem item={item} />)}
+        <div className='container flex flex-row justify-between gap-x-6 p-5'>
+            {categories.map((item) => <CategoryItem key={item.id} item={item} />)}
         </div>
 
     )
