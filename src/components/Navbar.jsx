@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className="flex justify-between py-5 px-2 items-center" >
                     <div className='flex flex-row items-center '>
                         <span className='text-sm cursor-pointer'>EN</span>
-                        <div className='flex border-black/40 rounded-2xl border-2 p-1 ml-6 border-solid  '>
+                        <div className='flex border-black/40  border-b-2 p-1 ml-6 border-solid  '>
                             <input type="text" className='focus:outline-none' />
                             <SearchIcon className='text-[gray]/40' />
                         </div>

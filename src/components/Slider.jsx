@@ -2,7 +2,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { slider1, slider2, slider3 } from '../assets/index'
 import { useState, useEffect } from 'react';
-import sliderItems from '../data';
+import { sliderItems } from '../data';
 
 
 
@@ -10,15 +10,17 @@ import sliderItems from '../data';
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
     const handleClick = (direction) => {
-        direction === 'left' ? setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2) : setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
+        direction === 'left'
+            ? setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2) :
+            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
     }
 
     return (
-        <div className=" container w-screen max-w-full h-screen flex  relative">
+        <div className=" container w-screen overflow-hidden max-w-full h-screen flex  relative">
             <div className="flex justify-center absolute  opacity-80 left-[1rem] z-10 cursor-pointer bottom-60 top-0 m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
                 <ArrowBackIosIcon onClick={() => handleClick('left')} />
             </div>
-            <div className={`wrapper transition ease-in-out delay-500 m-0    translate-x-[${slideIndex * -100}vw] flex h-full`}>
+            <div className={`wrapper transition-all ease duration-[1500ms] m-0    translate-x-[${slideIndex * -100}vw] flex h-full`}>
                 {sliderItems.map((slide) => {
                     return (
                         <div key={slide.id} className={`slide flex w-screen ${slide.bg}  items-center  h-[60vh]`}>
