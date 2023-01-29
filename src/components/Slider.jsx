@@ -32,31 +32,8 @@ const Slider = () => {
                             </div>
                         </div>
                     )
-
                 })
                 }
-
-                {/* <div className='slide flex w-screen border-solid border-4 border-black items-center  h-[70vh]'>
-
-                    <div className=' InfoContainer p-12 flex flex-col'>
-                        <h1 className='text-[70px] font-bold'>CLEARANCE SALE</h1>
-                        <p className='font-5 my-12 tracking-[.3rem]'>DON'T COMPROMISE ON STYLE! GET 30% OFF ALL NEW ARRIVALS.</p>
-                        <button className='cursor-pointer p-3 text-xl bg-transparent border-2 w-[150px] border-black  '>SHOP NOW</button>
-                    </div>
-                    <div className=' ImgContainer  flex justify-center h-full '>
-                        <img className='  h-full ml-5' src={slider2} />
-                    </div>
-                </div>
-                <div className='slide flex w-screen bg-[#928DB5]  items-center  h-[70vh]'>
-                    <div className=' ImgContainer  flex justify-center h-full '>
-                        <img className='h-full  ml-5' src={slider3} />
-                    </div>
-                    <div className=' InfoContainer  p-12 flex flex-col'>
-                        <h1 className='text-[70px] font-bold'>POPULAR SALE</h1>
-                        <p className='font-5 my-12 tracking-[.3rem]'>DON'T COMPROMISE ON STYLE! GET 30% OFF ALL NEW ARRIVALS.</p>
-                        <button className='cursor-pointer p-3 text-xl bg-transparent border-2 w-[150px] border-black  '>SHOP NOW</button>
-                    </div>
-                </div> */}
             </div>
             <div className="flex justify-center absolute  opacity-80 cursor-pointer z-10 bottom-60 top-0 right-[1rem] m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
                 <ArrowForwardIosIcon onClick={() => handleClick('right')} />
