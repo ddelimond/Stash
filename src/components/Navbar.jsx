@@ -18,7 +18,7 @@ const Navbar = () => {
                     <h1 className=' w-full cursor-pointer items-center text-3xl font-bold text-center grow'>
                         <img className='w-[150px] m-auto' src={logo} alt="logo" />
                     </h1>
-                    <span className=' flex flex-row gap-x-6 text-sm mr-2 justify-end  items-center'>
+                    <span className=' hidden md:flex flex-row gap-x-6 text-sm mr-2 justify-end  items-center'>
                         <div className='text-sm cursor-pointer'>REGISTER</div>
                         <div className='text-sm cursor-pointer'>SIGN IN</div>
                         <div className='text-sm cursor-pointer'>

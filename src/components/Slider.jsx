@@ -10,13 +10,11 @@ import { sliderItems } from '../data';
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
     const handleClick = (direction) => {
-        direction === 'left'
-            ? setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2) :
-            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
+        if (direction === 'left') { setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2) } else { setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0) }
     }
 
     return (
-        <div className=" container w-screen overflow-hidden max-w-full flex  relative">
+        <div className=" container hidden sm:flex w-screen overflow-hidden  max-w-full  relative">
             <div className="flex justify-center absolute  opacity-80 left-[1rem] z-10 cursor-pointer bottom-[0%] top-0 m-auto items-center h-12 w-12 bg-slate-50 rounded-3xl">
                 <ArrowBackIosIcon onClick={() => handleClick('left')} />
             </div>

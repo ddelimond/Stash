@@ -2,7 +2,7 @@ import logo from './logo.png';
 import slider1 from './slider1.png';
 import slider2 from './slider2.png';
 import slider3 from './slider3.png';
-import designer from './designer.jpeg'
+import designer from './designer.webp'
 import casual from './casual.jpeg'
 import lounge from './lounge.webp'
 import product1 from './1.png'
