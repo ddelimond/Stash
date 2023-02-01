@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className='contactItem mb-2 flex items-center'>
                     <EmailIcon className='m-2' /> stashcustomerservice@support.com
                 </div>
-                <div className='payments'>
+                <div className='payments pl-3'>
                     <img src="https://i.ibb.co/Qfvn4z6/payment.png" className='w-[50%] ' alt="payment methods" />
                 </div>
 

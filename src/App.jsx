@@ -1,4 +1,5 @@
 import Home from './pages/Home'
+import ProductList from './pages/ProductList'
 
 
 import './App.css'
@@ -6,7 +7,7 @@ import './App.css'
 function App() {
 
   return (
-    <Home />
+    <ProductList />
 
   )
 }
