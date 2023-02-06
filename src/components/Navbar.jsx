@@ -24,7 +24,7 @@ const Navbar = () => {
                     </div>
                     <span className=' hidden sm:flex flex-row gap-x-4 sm:text-sm ml-[10px] mr-2 sm:justify-end justify-center items-center'>
                         <div className='sm:text-sm text-[12px] w-[50px] text-center cursor-pointer '>SIGN IN</div>
-                        <div className='text-sm text-[12px] w-[60px] text-center cursor-pointer'>REGISTER</div>
+                        <div className='sm:text-sm text-[12px] w-[60px] text-center cursor-pointer'>REGISTER</div>
 
                         <div className='text-sm cursor-pointer'>
                             <Badge badgeContent={4} color="secondary" className='cursor-pointer'>
