@@ -7,13 +7,14 @@ import Filter from '../components/Filter'
 
 
 
-const ProductList = () => {
+const ProductList = ({ CAT }) => {
     return (
 
         <>
             <Announcement />
             <Navbar />
             <Filter />
+            <h1 className='title text-5xl font-bold text-center'>{CAT}</h1>
             <Products />
             <Newsletter />
             <Footer />

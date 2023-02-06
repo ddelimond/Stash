@@ -5,13 +5,14 @@ import { logo } from '../assets';
 import RoomIcon from '@material-ui/icons/Room';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
+import { payments } from '../assets';
 
 const Footer = () => {
     return (
-        <div className='container  flex flex-row p-5'>
-            <div className='left grow'>
+        <div className='container  flex flex-col  sm:flex-row p-5 max-w-[100vw]'>
+            <div className='left flex flex-col  items-center sm:items-start justify-center sm:mb-0 grow'>
                 <div className='logo'>
-                    <img src={logo} alt="logo" className='w-[30%]' />
+                    <img src={logo} alt="logo" className='w-[30%] m-auto sm:m-0' />
                 </div>
                 <div className='desc my-5 max-w-[380px]'>
                     Stash is a family of brands and businesses, making it possible for customers around the world to express themselves through fashion and design, and to choose a more sustainable lifestyle.
@@ -28,8 +29,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='center grow'>
-                <h3 className='titile font-bold mb-8 text-center'>Useful Links</h3>
+            <div className='center grow hidden sm:block '>
+                <h3 className=' titile font-bold mb-8 text-center'>Useful Links</h3>
                 <ul className='list m-0 p-0 flex text-center flex-wrap'>
                     <li className='listitem  w-[50%] mb-2'>Home</li>
                     <li className='listitem  w-[50%] mb-2 '>Cart</li>
@@ -42,9 +43,9 @@ const Footer = () => {
                     <li className='listitem w-[50%] mb-2'>Terms</li>
                 </ul>
             </div>
-            <div className='right grow p-5'>
+            <div className='right grow flex justify-center flex-col p-5'>
                 <h1 className='titile font-bold mb-8 text-center'>Contact</h1>
-                <div className='contactItem mb-2 flex items-center'>
+                <div className='contactItem mb-2 flex items-center sm:items-start'>
                     <RoomIcon className='m-2' /> 999 N High St Columbus Ohio 43209
                 </div>
                 <div className='contactItem mb-2 flex items-center'>
@@ -53,8 +54,8 @@ const Footer = () => {
                 <div className='contactItem mb-2 flex items-center'>
                     <EmailIcon className='m-2' /> stashcustomerservice@support.com
                 </div>
-                <div className='payments pl-3'>
-                    <img src="https://i.ibb.co/Qfvn4z6/payment.png" className='w-[50%] ' alt="payment methods" />
+                <div className='payments px-2'>
+                    <img src={payments} className='w-[80%]' alt="payment methods" />
                 </div>
 
             </div>
