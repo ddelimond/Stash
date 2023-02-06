@@ -21,9 +21,9 @@ const SingleProduct = (props) => {
             <div className='imgContainer flex justify-center items-center grow'>
                 <img src={single4} alt="" className=' max-w-[450px] w-full sm:h-[90vh] object-cover' />
             </div>
-            <div className='Info flex   w-[50%] flex-col justify-center grow py-0 px-[50px] border-2 border-solid border-black'>
+            <div className='Info flex   w-[50%] flex-col justify-center grow py-0 px-[50px] '>
                 <h1 className='title text-4xl font-thin'>Colorblock Corduroy Shacket</h1>
-                <p className='desc text-xl tracking-wider  max-w-4xl mx-0 my-[20px] truncate'>A corduroy shacket featuring a colorblock design, basic collar, chest patch pockets, dropped long sleeves, button-front closures, and a vented dolphin hem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi eveniet quo ipsam non dicta.</p>
+                <p className='desc text-xl tracking-wider  max-w-4xl mx-0 my-[20px]'>A corduroy shacket featuring a colorblock design, basic collar, chest patch pockets, dropped long sleeves, button-front closures, and a vented dolphin hem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi eveniet quo ipsam non dicta.</p>
                 <span className='price text-[40px] font-thin'>$20</span>
                 <div className='filters flex flex-col flex-wrap sm:flex-row justify-between   w-[50%] my-[10px]  '>
                     <div className='colorFilter flex flex-row items-center gap-x-2 '>
