@@ -1,16 +1,12 @@
 
-
-import Product from './pages/Product'
-
-
-
 import './App.css'
+import Cart from './pages/Cart'
 
 
 function App() {
 
   return (
-    <Product />
+    <Cart />
   )
 }
 

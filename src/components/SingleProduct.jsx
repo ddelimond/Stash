@@ -23,9 +23,9 @@ const SingleProduct = (props) => {
             </div>
             <div className='Info flex   w-[50%] flex-col justify-center grow py-0 px-[50px] '>
                 <h1 className='title text-4xl font-thin'>Colorblock Corduroy Shacket</h1>
-                <p className='desc text-xl tracking-wider  max-w-4xl mx-0 my-[20px]'>A corduroy shacket featuring a colorblock design, basic collar, chest patch pockets, dropped long sleeves, button-front closures, and a vented dolphin hem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi eveniet quo ipsam non dicta.</p>
+                <p className='desc text-xl tracking-wider  max-w-4xl mx-0 my-[20px] truncate'>A corduroy shacket featuring a colorblock design, basic collar, chest patch pockets, dropped long sleeves, button-front closures, and a vented dolphin hem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi eveniet quo ipsam non dicta.</p>
                 <span className='price text-[40px] font-thin'>$20</span>
-                <div className='filters flex flex-col flex-wrap sm:flex-row justify-between   w-[50%] my-[10px]  '>
+                <div className='filters flex flex-row justify-between  w-full my-[10px]  border-2 border-black border-solid'>
                     <div className='colorFilter flex flex-row items-center gap-x-2 '>
                         <span className='title text-xl '>Colors</span>
                         <div className='colorsContainer flex gap-x-[10px]'>
@@ -47,14 +47,14 @@ const SingleProduct = (props) => {
                     </div>
                 </div>
 
-                <div className='addToCartContainer flex flex-col  sm:flex-row flex-wrap w-[50%] my-[10px] gap-y-[20px] sm:gap-y-0 justify-between sm:items-center'>
+                <div className='addToCartContainer flex flex-col  sm:flex-row w-full my-[10px] gap-y-[20px] sm:gap-y-0 justify-between sm:items-center '>
                     <div className='amountContainer flex items-center font-bold '>
                         <Remove className='cursor-pointer' onClick={removeItem} />
                         <span className='amount w-[30px] h-[30px] rounded-[10px] flex justify-center items-center  mx-[5px]  border-solid border-teal-500 border-2'>{itemAmount}</span>
                         <Add className='cursor-pointer' onClick={addItem} />
                     </div>
 
-                    <button className='w-[120px] h-[40px]  sm:mt-[20px] sm:mr-[45px] rounded-[5px] transition-all border-teal-500 border-solid border-2 hover:bg-teal-500 hover:text-white ease-in duration-300 '>Add To Cart</button>
+                    <button className='w-[120px] h-[40px] sm:mr-[45px] rounded-[5px] transition-all border-teal-500 border-solid border-2 hover:bg-teal-500 hover:text-white ease-in duration-300 '>Add To Cart</button>
 
                 </div>
             </div>

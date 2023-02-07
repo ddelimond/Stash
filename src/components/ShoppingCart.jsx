@@ -8,20 +8,20 @@ const ShoppingCart = () => {
     const [amount, setAmount] = useState(1)
 
     return (
-        <div className="container w-screen h-screen max-w-[100vw]">
-            <div className="wrapper p-[20px]">
+        <div className="container w-screen h-[100%] xl:h-screen max-w-[100vw]">
+            <div className="wrapper p-[10px] sm:p-[20px]">
                 <h1 className="title  text-4xl font-light text-center">YOUR BAG</h1>
                 <div className="top flex items-center justify-between p-[20px]">
                     <button className=" topButton p-[10px] cursor-pointer font-bold h-[60px] bg-white border-2 border-black border-solid  hover:bg-gray-50 transition-all ease-in duration-300">CONTINUE SHOPPING</button>
-                    <div className="topTexts">
+                    <div className="topTexts hidden sm:block">
                         <span className="topText underline cursor-pointer mx-[10px]">Shopping Bag(4)</span>
                         <span className="topText underline cursor-pointer mx-[10px]">Your Wishlist(0)</span>
                     </div>
                     <button className={`topButton p-[10px] cursor-pointer font-bold h-[60px] bg-black text-white  hover:bg-black/80 transition-all ease-in duration-300`} type="filled">CHECKOUT NOW</button>
                 </div>
-                <div className="bottom flex justify-between">
+                <div className="bottom flex flex-col xl:flex-row justify-between">
                     <div className="info grow-[3] ">
-                        <div className="product flex justify-between my-[10px]  ">
+                        <div className="product flex flex-col lg:flex-row justify-between my-[10px]  ">
                             <div className="productDetails grow-[2] flex">
                                 <img className="w-[200px]" src="https://cdn-images.farfetch-contents.com/18/47/55/81/18475581_40501654_300.jpg" alt="" />
                                 <div className="details p-[20px] flex flex-col justify-around">
@@ -31,10 +31,10 @@ const ShoppingCart = () => {
                                     <span><b>SIZE:</b> S, M, L, XL</span>
                                 </div>
                             </div>
-                            <div className="priceDetails grow-[1] flex items-center  flex-col">
+                            <div className="priceDetails grow-[1] flex items-center font-bold flex-col">
                                 <div className="prodAmountCont flex flex-row items-center mb-[20px]">
                                     <Add className="cursor-pointer" />
-                                    <div className="prodAmount text-[24px] m-[5px]">1</div>
+                                    <div className="prodAmount text-[24px] mx-[15px] my-[5px]">1</div>
                                     <Remove className="cursor-pointer" />
                                 </div>
                                 <div className="prodPrice font-thin text-[30px]  ">$ 800</div>
@@ -43,7 +43,7 @@ const ShoppingCart = () => {
                         </div>
                         <div className="hr border-none h-[1px] bg-[#eeee]"></div>
 
-                        <div className="product flex justify-between my-[10px]  ">
+                        <div className="product flex flex-col lg:flex-row justify-between my-[10px]  ">
                             <div className="productDetails grow-[2] flex">
                                 <img className="w-[200px]" src={bag} alt="" />
                                 <div className="details p-[20px] flex flex-col justify-around">
@@ -54,9 +54,9 @@ const ShoppingCart = () => {
                                 </div>
                             </div>
                             <div className="priceDetails grow-[1] flex items-center  flex-col">
-                                <div className="prodAmountCont flex flex-row items-center mb-[20px]">
+                                <div className="prodAmountCont flex flex-row items-center font-bold mb-[20px]">
                                     <Add className="cursor-pointer" />
-                                    <div className="prodAmount text-[24px] m-[5px]">1</div>
+                                    <div className="prodAmount text-[24px] mx-[15px] my-[5px]">1</div>
                                     <Remove className="cursor-pointer" />
                                 </div>
                                 <div className="prodPrice font-thin text-[30px]  ">$ 129</div>
@@ -64,7 +64,7 @@ const ShoppingCart = () => {
 
                         </div>
                     </div>
-                    <div className="summary grow-[1] border-solid border-[.5px] border-lightgray  p-[20px] h-[50vh]">
+                    <div className="summary grow-[1] border-solid border-[.5px] border-lightgray  p-[20px] xl:h-[50vh]">
                         <h1 className="summaryTitle font-extralight text-2xl ">
                             ORDER SUMMARY
                         </h1>
@@ -103,7 +103,7 @@ const ShoppingCart = () => {
                                 $ 80
                             </div>
                         </div>
-                        <button className="w-full p-[10px] bg-black text-white">CHECKOUT NOW</button>
+                        <button className="w-full p-[10px] bg-black text-white  hover:bg-black/80 transition-all ease-in duration-300">CHECKOUT NOW</button>
                     </div>
                 </div>
             </div>
