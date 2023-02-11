@@ -5,12 +5,11 @@ const RegisterForm = () => {
         <div className='container w-screen h-screen flex flex-col justify-center items-center bg-[url(https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)] max-w-[100vw]   '>
             <div className='wrapper w-[700px] flex flex-col gap-y-[20px] p-[20px] mt-[20px]  bg-white/80'>
                 <h1 className='title text-left text-black text-[24px]'>CREATE AN ACCOUNT</h1>
-                <form action="" method='' className='flex flex-row flex-wrap gap-y-[20px] gap-x-[20px]'>
-                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]   focus:outline-none inline-block' type="text" placeholder='name' />
-                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]  focus:outline-none inline-block' type="text" placeholder='first name' />
-                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]  focus:outline-none inline-block' type="text" placeholder='last name' />
-                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]   focus:outline-none inline-block' type="email" placeholder='username' />
-                    <input className='w-[300px] h-[50px]  border-2 border-solid border-gray-200 p-[10px] rounded-[5px]   focus:outline-none inline-block' type="password" placeholder='password' hidden />
+                <form action="/auth/register" method='POST' className='flex flex-row flex-wrap gap-y-[20px] gap-x-[20px]'>
+                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]  focus:outline-none inline-block' type="text" placeholder='firstname' name="firstname" />
+                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]  focus:outline-none inline-block' type="text" placeholder='lastname' name="lastname" />
+                    <input className='w-[300px] h-[50px] border-2 border-solid border-gray-200  p-[10px] rounded-[5px]   focus:outline-none inline-block' type="email" placeholder='username' name="username" />
+                    <input className='w-[300px] h-[50px]  border-2 border-solid border-gray-200 p-[10px] rounded-[5px]   focus:outline-none inline-block' type="password" placeholder='password' hidden name="password" />
                     <input className='w-[300px] h-[50px]  border-2 border-solid border-gray-200 p-[10px] rounded-[5px]   focus:outline-none inline-block' type="password" placeholder='confirm password' hidden />
                 </form>
                 <p className="acknowlegment ">
